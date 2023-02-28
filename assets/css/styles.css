@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+/* Reset css */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+/* common */
+.mt-24 {
+  margin-top: 2.4rem;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 720px;
+  margin: 0 auto;
+  max-width: calc(100% - 22px);
+}
+
+h1 {
+  color: var(--color-white);
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-top: 50px;
+  text-align: center;
+}
+
+p#description {
+  color: var(--color-white);
+  font-size: 1.8rem;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+form {
+  margin-top: 3.2rem;
+  background-color: var(--color-darkblue-alpha);
+  padding: 4rem;
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  color: var(--color-white);
+}
+
+input {
+  font-size: 1.6rem;
+  display: block;
+  height: 3.8rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.2rem;
+}
+
+textarea:focus,
+select:focus,
+input:focus {
+  outline-color: #3333bd;
+  outline-style: solid;
+}
+
+select {
+  width: 100%;
+  height: 3.8rem;
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.8rem;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+}
+
+.inline {
+  width: unset;
+  display: inline;
+  vertical-align: middle;
+  margin: -2px 0 0 0;
+  width: 2rem;
+  font-size: 1.4rem;
+}
+textarea {
+  width: 100%;
+  min-height: 12rem;
+  padding: 1rem;
+  font-size: inherit;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  color: var(--color-white);
+  background-color: var(--color-green);
+  margin-top: 20px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  height: unset;
+  padding: 1.4rem;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}

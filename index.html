@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <section>
+      <form action="post" id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name" class="mt-24">Name <input id="name" type="text" name="name"
+              placeholder="Enter your name" required></label>
+          <label id="email-label" for="email" class="mt-24">Email<input id="email" type="email" name="email"
+              placeholder="Enter your email" required></label>
+          <label id="number-label" for="number" class="mt-24">Age (optional) <input id="number" type="number"
+              name="number" min="13" max="120" placeholder="Age"></label>
+        </fieldset>
+
+        <fieldset class="mt-24">
+          <label for="dropdown">
+            Which option best describes your current role?
+            <select name="currentRole" id="dropdown">
+              <option value="" selected>Select current role</option>
+              <option value="1">Student</option>
+              <option value="2">Full Time Job</option>
+              <option value="3">Full Time Learner</option>
+              <option value="4">Prefer not to say</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="mt-24">
+          <label for="" class="mb-8"> Would you recommend freeCodeCamp to a friend?</label>
+          <label for="definitely" class="referrer-label mb-8"><input type="radio" name="referrer" class="inline"
+              id="definitely" value="1" checked>
+            Definitely</label>
+          <label for="maybe" class="referrer-label mb-8"><input type="radio" name="referrer" class="inline" id="maybe"
+              value="2">
+            Maybe</label>
+          <label for="not-sure" class="referrer-label mb-8"><input type="radio" name="referrer" class="inline"
+              id="not-sure" value="3">
+            Not sure</label>
+        </fieldset>
+
+        <fieldset class="mt-24">
+          <label for="dropdown-favorite-feature">
+            What is your favorite feature of freeCodeCamp?
+            <select name="favoriteFeature" id="dropdown-favorite-feature">
+              <option value="" selected>Select an option</option>
+              <option value="1">Challenges</option>
+              <option value="2">Project</option>
+              <option value="3">Community</option>
+              <option value="4">Open Source</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="mt-24">
+          <label for="">
+            <p class="mb-8">What would you like to see improved? (Check all that apply)</p>
+
+            <label class="mb-8" for="frontend"><input type="checkbox" class="inline" value="1" name="frontend"
+                id="frontend">
+              Front-end
+              Projects</label>
+            <label class="mb-8" for="backend"><input type="checkbox" class="inline" value="2" name="backend"
+                id="backend">
+              Back-end
+              Projects</label>
+            <label class="mb-8" for="dataVisual"><input type="checkbox" class="inline" value="3" name="dataVisual"
+                id="dataVisual">
+              Data
+              Visualization</label>
+            <label class="mb-8" for="challenges"><input type="checkbox" class="inline" value="4" name="challenges"
+                id="challenges">
+              Challenges</label>
+            <label class="mb-8" for="openSource"><input type="checkbox" class="inline" value="5" name="openSource"
+                id="openSource">
+              Open Source
+              Community</label>
+            <label class="mb-8" for="help"><input type="checkbox" class="inline" value="6" name="help" id="help"> Gitter
+              help
+              rooms</label>
+            <label class="mb-8" for="videos"><input type="checkbox" class="inline" value="7" name="videos" id="videos">
+              Videos</label>
+            <label class="mb-8" for="cityMeetups"><input type="checkbox" class="inline" value="8" name="cityMeetups"
+                id="cityMeetups"> City
+              Meetups</label>
+            <label class="mb-8" for="wiki"><input type="checkbox" class="inline" value="9" name="wiki" id="wiki">
+              Wiki</label>
+            <label class="mb-8" for="forum"><input type="checkbox" class="inline" value="10" name="forum" id="forum">
+              Forum</label>
+            <label class="mb-8" for="additionalCourses"><input type="checkbox" class="inline" value="11"
+                name="additionalCourses" id="additionalCourses">
+              Additional Courses</label>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="comment" class="mt-20">
+            <p class="mb-8">Any comments or suggestions?</p>
+            <textarea name="" id="comment" placeholder="Enter your comment here..."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
