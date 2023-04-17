@@ -111,12 +111,15 @@ input {
   border-radius: 0.4rem;
   margin-top: 0.8rem;
   padding: 0.6rem 1.2rem;
+
+  transition: all 0.25s ease-in;
+  will-change: outline-color, outline-style;
 }
 
 textarea:focus,
 select:focus,
-input:focus {
-  outline-color: #3333bd;
+input:focus:not([type="checkbox"]):not([type="radio"]) {
+  outline-color: #8a8ae0;
   outline-style: solid;
 }
 
